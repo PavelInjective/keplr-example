@@ -52,7 +52,7 @@ const broadcastTx = async (chainId: string, txRaw: TxRaw) => {
   const pubKey = Buffer.from(key.pubKey).toString("base64");
   const injectiveAddress = key.bech32Address;
   const restEndpoint =
-    "https://sentry.lcd.injective.network"; /* getNetworkEndpoints(Network.MainnetSentry).rest */
+    "https://testnet.sentry.lcd.injective.network:443"; /* getNetworkEndpoints(Network.MainnetSentry).rest */
   const amount = {
     amount: new BigNumberInBase(0.01).toWei().toFixed(),
     denom: "inj",
